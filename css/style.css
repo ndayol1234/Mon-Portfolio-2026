@@ -1,41 +1,40 @@
-root{
+
+
+:root{
+
     --violet-doux:#6C63FF;
-    --violet-fonce:#534EDD;
-    --orange-vif:#FFA726;
-    --gris-tres-fonce:#333;
-    --gris-fonce:#666;
-    --gris-tres-crair:#F8F8F8;
+    --violet-fonce: #534EDD;
+    --orange-vif: #FFA725;
+    --gris-tres-fonce: #333;
+    ---gris-tres-clair: #F8F8F8;
     --gris-clair:#EEE;
-
 }
-*
-{
-    margin:0;
+
+*  {
     padding:0;
-    box-sizing:borde-box;
-
+    margin:0;
+    box-sizing:border-box;
 }
-body{
-    background-color:var(--gris-clair-clair);
-    font-family:roboto,sans-serif;
-    line-height:1.6;
-
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(---gris-tres-clair);
+  line-height: 1.6rem;
 }
 header{
     background-color: white;
-    box-shadow: 2 px 10px rgba(0,0,0.05);
+    box-shadow: 2px 6px  10px rgba(0, 0, 0, 0.05);
     position:sticky;
     top:0;
     z-index: 100;
     display: flex;
-    justify-content:space-between;
-    align-items: conter;
+    justify-content: space-between;
+    align-items: center;
     padding: 2rem 3rem;
-
 }
-header dir a {
-    text-decoration: nome;
-    font-size: 2.2rem;
-    font-weight: bold;
-    color:var(--violet-doux)
+header div a {
+    text-decoration:none;
+    font-size: 2.2 rem;
+    font-weight:  bold;
+    color: var(--violet-doux);
+
 }
