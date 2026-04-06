@@ -1,24 +1,24 @@
 :root{
+
     --violet-doux:#6C63FF;
     --violet-fonce: #534EDD;
     --orange-vif: #FFA725;
     --gris-tres-fonce: #333;
     ---gris-tres-clair: #F8F8F8;
     --gris-clair:#EEE;
+    --gris-fonce:#666;
 }
 
 *  {
-    padding: 0;
-    margin: 0;
+    padding:0;
+    margin:0;
     box-sizing:border-box;
 }
-
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(---gris-tres-clair);
-  line-height: 1.6;
+  line-height: 1.6rem;
 }
-
 header{
     background-color: white;
     box-shadow: 2px 6px  10px rgba(0, 0, 0, 0.05);
@@ -30,7 +30,6 @@ header{
     align-items: center;
     padding: 2rem 3rem;
 }
-
 header div a {
     text-decoration:none;
     font-size: 2.2 rem;
@@ -38,197 +37,292 @@ header div a {
     color: var(--violet-doux);
 
 }
-
-header div a {
-    text-decoration: none;
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: var (--violet-doux);
-}
-
 ul li {
     list-style: none;
-    margin-left: 25px;
-}
+    /* separer  */
+    margin-left:25px;
 
+
+}
 ul {
     display: flex;
-}
 
+}
 ul li a {
+
     text-decoration: none;
-    color: var(--gris-tres-fonce);
+    color:var(--gris-tres-fonce)                                                                                                                                                                                                                                                                                                                        
+;
     font-weight: 600;
-    font-size: 1.1rem;
-    position: relative;
-    padding: 10px 0;
-}
+    /* taille de la police */
+    font-size:1.1rem;
+    position:relative;
+    padding:10px 0;
 
+}
 ul li a:hover {
-    color: var(--violet-doux);
-}
+    color:var(--violet-doux);
 
-ul li a::after {|
+}
+ul li a::after {
     content:'';
-    position: absolute;
-    left: 0;
+    position:absolute;
+    left:0;
     bottom: 0;
     height: 3px;
     width: 0;
     background-color: var(--violet-doux);
     transition: width 0.3s ease;
-}
 
+}
 ul li a:hover::after {
-     width: 100%;
+    /* on survole pourque ca s'allume  de pair avec le height*/
+    width:100%;
+
+
+}
+.active{
+    color: var(--violet-doux)
+
+}
+a.active::after{
+      width: 100%;
 }
 
-a.active {
-   color: var(--violet-doux);
-     
-}
-
-a.active::after {
-    width: 100px; 
-}
-
-.hero {
+.hero{
     display: flex;
     justify-content: center;
-    gap: 5rem;
     align-items: center;
+    gap:5rem;
     text-align: center;
-    margin: 10rem 2rem;
-}
+    margin: 5rem;
 
+}
 .hero img{
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 300px;
     border: 8px solid var(--violet-doux);
+
 }
-.hero h1{
-    color: var(--violet-fonce);
+
+.hero h1 {
+    color:var(--violet-fonce);
     font-size: 4rem;
     font-weight: 700;
+    margin-bottom: 2.2rem;
+}
+.hero p {
+    color:var(--gris-fonce);
+    font-size:1.3rem ;
     margin-bottom: 1.2rem;
 }
-
-.hero p{
-    color: var(--gris-fonce);
-    font-size: 1.3rem;
-    margin-bottom: 1.2rem;
-}
-
 .hero a{
     text-decoration: none;
-    display: inline-block;
+    display:inline-block;
     background-color: var(--violet-doux);
-    color: white;
+    color:white;
     padding: 15px 30px;
     border-radius: 50px;
-    text-transform: uppercase;
+    text-transform:uppercase;
     letter-spacing: 1.1px;
     font-weight: 600;
     margin-top: 1rem;
-    transition: background-color 0.3s ease,transform 0.2s ease;
+    transition: background-color 0.3sec ease, transform 0.2sec ease;
 }
 .hero a:hover{
     background-color: var(--violet-fonce);
     transform: translateY(-3px);
 }
-
-.apropos {
+.apropos  {
+    /* largeur du bloc a propos */
     width: 800px;
+    /* marge */
     margin: 6rem auto;
+    /* centrer le texte */
     text-align: center;
 }
-
-section h2{
-    color: var(--violet-doux);
+section h2 {
+    color:var(--violet-doux);
+    /* la taille du texte */
     font-size: 2.6rem;
     font-weight: 700;
     position: relative;
     text-align: center;
-    
 }
-
-section h2::after{
+section h2::after {
     content: '';
     display: block;
-    width: 68px;
+    width: 60px;
     height: 4px;
     background-color: var(--violet-doux);
+    /* marge en haut et en bas (a propos) */
     margin: 1.2rem auto;
-    border-radius:2px;
+    border-radius: 2px;
 }
-
-.apropos p{
-    margin-bottom:2rem ;
+.apropos p {
+    margin-bottom: 2rem;
     color: var(--gris-fonce);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    
+    font-size: 1.2rem; 
 }
-
-.competences table{
-    width: 80%;
+.competences table {
+    width:80%;
     margin: 0 auto;
-    border-collapse: collapse;
-    background-color: white;
-    box-shadow: 0 5px rgba(0, 0,0 , 0.08);
+    /* supprime les lignes au niveau de table (comptences , categories) */
+    border-collapse:collapse;
+    background-color:#fff;
+    /* mettre de l'ombre sur le tableau */
+    box-shadow: 0 5px 15px rgba(0,0, 0, 0.08);
     border-radius: 10px;
     overflow: hidden;
-}
-
-.competences table th,.competences table td{
-    padding: 15px;
-}
-
-.competences table thead{
-    background-color: var(--violet-doux);
-    color: #FFF;
-    text-transform: uppercase;
-}
-
-.competences table td{
-    border-bottom: 1px solid var(--gris-clair);
-}
-.competences table tbody tr:nth-child(even){
-    background-color: #fdfdfd;
-}
-
-.competences table tbody tr{
-    transition: background-color 0.3s ease;
-}
-
-.competences table tbody tr:hover{
-    background-color: #f0f0f0;
-}
-
-.competences table thead th{
     text-align: left;
 }
+.competences table th, .competences table td {
+    padding: 15px;
+}
+.competences thead {
+    background-color: var(--violet-doux);
+    color : #fff;
+}
+.competences table tbody td {
+    border-bottom: 1px solid var(--gris-clair);
 
-footer p{
+}
+/* les cellules pair */
+.competences table tbody tr:nth-child(even) {
+      background-color: #fdfdfd;
+}
+.competences table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+.competences table tbody tr {
+    transition:background-color 0.3s ease;
+}
+
+.competences table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+footer {
+    /* agranir la marge */
     margin-top: 3rem;
     background-color: var(--violet-doux);
-    padding: 3rem;
+    padding:3rem auto;
     text-align: center;
-}
 
-footer p{
+}
+footer p {
     color: white;
     margin-bottom: 1.2rem;
-}
 
-footer a{
+}
+footer  a {
     display: inline-block;
     font-size: 1.6rem;
     color: white;
     margin: 0 10px;
-    transition: color 0.3s ease,tranform 0.2s ease;
+    transition: color 0.3 sec ease, transform 0.2 ease;
 }
 footer a:hover{
-    color: var(--violet-doux);
-    transform: translatey(-3px);
+    color: var(--orange-vif);
+    transform: translateY(-3px);
 }
+
+ /* SECTION */
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #6c63ff;
+            font-size: 32px;
+        }
+
+        .underline {
+            width: 60px;
+            height: 4px;
+            background: #6c63ff;
+            margin: 10px auto 40px;
+            border-radius: 10px;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* CARD */
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .card h3 {
+            color: #6c63ff;
+            margin-top: 0;
+        }
+
+        .tags {
+            margin: 10px 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #EEE;
+            padding: 5px 10px;
+            margin: 3px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #6c63ff
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #6c63ff;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        .socials a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
