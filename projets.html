@@ -13,7 +13,7 @@
 <body>
     <header>
         <div>
-            <a href="#" class="entete">Mon Portfolio</a>
+            <a href="index.html" class="entete">Mon Portfolio</a>
         </div>
         <nav>
             <ul>
@@ -21,146 +21,131 @@
                 <li><a href="projets.html"class="active">Projets</a></li>
                 <li><a href="passions.html">Passions</a></li>
                 <li><a href="divertissement.HTML">Divertissement</a></li>
-                <li><a href="contacte.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 
             </ul>
              
         </nav>
     </header>
    <main>
-     <!-- SECTION PROJETS -->
-    <section class="section">
-        <h2>Mes Réalisations</h2>
-        
+   <main>
+    <section class="projets-section">
+        <div class="projets-header">
+            <h2>Mes Réalisations</h2>
+            
+        </div>
 
-        <div class="grid">
-
-            <!-- CARD 1 -->
-            <div class="card">
-                <img src="c:\Users\hp\Pictures\télécharger.webp">
-                <div class="card-content">
+        <div class="projets-grid">
+            <article class="projet-card">
+                <div class="projet-image">
+                    <img src="c:\Users\hp\Pictures\télécharger.webp" alt="Site E-commerce">
+                </div>
+                <div class="projet-info">
                     <h3>Site E-commerce</h3>
-                    <p>Une boutique en ligne développée avec HTML, CSS et JavaScript.</p>
-
+                    <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
                     <div class="tags">
-                        <a href="#" class="tag">HTML</a>
-                        <a href="#" class="tag">CSS</a>
-                        <a href="#" class="tag">JS</a>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
                     </div>
-
-                    <div class="links">
-                        <a href="https://github.com/tonpseudo/mon-projet" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="page-Demo.html" class="btn">¤ Démo</a>
+                    <div class="projet-links">
+                        <a href="https://github.com/tonpseudo/mon-projet"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <!-- CARD 2 -->
-            <div class="card">
-                <img src="c:\Users\hp\Pictures\télécharger (1).webp">
-                <div class="card-content">
-                    <h3>Gestionnaire de tâches</h3>
-                    <p>Application web pour organiser ses projets.</p>
-
-                    <div class="tags">
-                        <a href="#" class="tag">Python</a>
-                        <a href="#" class="tag">Flask</a>
-                    </div>
-
-                    <div class="links">
-                        <a href="https://github.com/tonpseudo/mon-projet" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="page-Demo.html" class="btn">¤ Démo</a>
-                    </div>
-
+            <article class="projet-card">
+                <div class="projet-image">
+                    <img src="c:\Users\hp\Pictures\télécharger (1).webp" alt="Gestionnaire de Tâches">
                 </div>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="card">
-                <img src="c:\Users\hp\Pictures\OIP.webp">
-                <div class="card-content">
-                    <h3>Blog personnel</h3>
-                    <p>Projet en cours avec Laravel.</p>
-
+                <div class="projet-info">
+                    <h3>Gestionnaire de Tâches</h3>
+                    <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
                     <div class="tags">
-                        <a href="#" class="tag">PHP</a>
-                        <a href="#"class="tag">Laravel</a>
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
                     </div>
-
-                    <div class="links">
-                        <a href="https://github.com/tonpseudo/mon-projet" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="page-Bientot.html" class="btn">® Bientot</a>
+                    <div class="projet-links">
+                        <a href="https://github.com/tonpseudo/mon-projet"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-        </div>
-
-
-        <div class="grid">
-
-            <!-- CARD 4 -->
-            <div class="card">
-                <img src="c:\Users\hp\Pictures\OIP (1).webp">
-                <div class="card-content">
-                    <h3>Dashbard d'Analyse</h3>
-                    <p>Virtualisation de données dynamiques avec python et bibliothèque Matplotlib.</p>
-
+            <article class="projet-card">
+                <div class="projet-image">
+                    <img src="c:\Users\hp\Pictures\OIP.webp" alt="Blog Personnel">
+                </div>
+                <div class="projet-info">
+                    <h3>Blog Personnel</h3>
+                    <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
                     <div class="tags">
-                        <a href="#" class="tag">python</a>
-                        <a href="#" class="tag">DAta</DAta></a>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Laravel</span>
                     </div>
-
-                    <div class="links">
-                        <a href="https://github.com/tonpseudo/mon-projet" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="page-Demo.html" class="btn">¤ Démo</a>
+                    <div class="projet-links">
+                        <a href="https://github.com/tonpseudo/mon-projet"><i class="fa-brands fa-github"></i> Code</a>
+                        <span><i class="fa-solid fa-clock"></i> Bientôt</span>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <!-- CARD 5 -->
-            <div class="card">
-                <img src="c:\Users\hp\Pictures\OIP (2).webp">
-                <div class="card-content">
-                    <h3>Apllication Météo</h3>
-                    <p>une application utin*lisant une API en temps réel pour la météo mondial.</p>
-
+            <article class="projet-card">
+                <div class="projet-image">
+                    <img src="c:\Users\hp\Pictures\OIP (1).webp" alt="Dashboard d'Analyse">
+                </div>
+                <div class="projet-info">
+                    <h3>Dashboard d'Analyse</h3>
+                    <p>Visualisation de données dynamiques avec Python et la bibliothèque Matplotlib.</p>
                     <div class="tags">
-                        <a href="#" class="tag">JavaScript</a>
-                        <a href="#" class="tag">API</a>
+                        <span class="tag">Python</span>
+                        <span class="tag">Data</span>
                     </div>
-
-                    <div class="links">
-                        <a href="https://github.com/tonpseudo/mon-projet" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                    <div class="projet-links">
+                        <a href="https://github.com/tonpseudo/mon-projet"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <!-- CARD 6 -->
-            <div class="card">
-                <img src="c:\Users\hp\Pictures\OIP (3).webp">
-                <div class="card-content">
+            <article class="projet-card">
+                <div class="projet-image">
+                    <img src="c:\Users\hp\Pictures\OIP (2).webp" alt="Application Météo">
+                </div>
+                <div class="projet-info">
+                    <h3>Application Météo</h3>
+                    <p>Une application utilisant une API en temps réel pour afficher la météo mondiale.</p>
+                    <div class="tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API</span>
+                    </div>
+                    <div class="projet-links">
+                        <a href="https://github.com/tonpseudo/mon-projet"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="projet-card">
+                <div class="projet-image">
+                    <img src="c:\Users\hp\Pictures\OIP (3).webp" alt="Maquette Mobile UI">
+                </div>
+                <div class="projet-info">
                     <h3>Maquette Mobile UI</h3>
-                    <p>coception d'une interface utilisateur moderne pour une application de fitness.</p>
-
+                    <p>Conception d'une interface utilisateur moderne pour une application de fitness.</p>
                     <div class="tags">
-                        <a href="#" class="tag">Figma</a>
-                        <a href="#"class="tag">Design</a>
+                        <span class="tag">Figma</span>
+                        <span class="tag">Design</span>
                     </div>
-                    
-                    <div class="links">
+                    <div class="projet-links">
                         <a href="https://www.figma.com/file/XXXX/Mon-Design" target="_blank"><i class="fab fa-figma"></i> Design</a>
-                        <a href=""><i class="fa-solid fa-eye"></i>Apeçu</a>
+                        <a href="#"><i class="fa-solid fa-eye"></i> Aperçu</a>
                     </div>
                 </div>
-            </div>
-
+            </article>
         </div>
     </section>
-
-    </section>
-
    </main>
     
     <footer>
@@ -169,8 +154,8 @@
             </p>
             <div>
                 <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/tonpseudo/mon-projet"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
 
             </div>
     </footer>
