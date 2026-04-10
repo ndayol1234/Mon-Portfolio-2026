@@ -520,3 +520,112 @@ footer a:hover{
     }
 }
 
+/* ============================================================
+   RESPONSIVE DESIGN (Media Queries)
+   ============================================================ */
+
+/* --- TABLETTES (Moins de 1024px) --- */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    .hero {
+        gap: 2rem;
+        margin: 3rem 2rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    /* On réduit la largeur fixe de 800px pour qu'elle tienne sur tablette */
+    .apropos, .passions-section-aligned, .divertissement-section {
+        width: 90%;
+        margin: 4rem auto;
+    }
+}
+
+/* --- SMARTPHONES (Moins de 768px) --- */
+@media screen and (max-width: 768px) {
+    
+    /* Header : on passe le menu sous le logo */
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    header div {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    ul li {
+        margin: 5px 10px;
+    }
+
+    /* Hero : l'image passe au dessus du texte */
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 2rem 1rem;
+    }
+
+    .hero img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Tableaux : on permet le défilement horizontal s'il est trop large */
+    .competences table {
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    /* Grilles (Projets / Passions) : une seule colonne */
+    .projets-grid, .passions-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Ajustement des formulaires (Contact) */
+    .contact-content {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+}
+
+/* --- PETITS TÉLÉPHONES (Moins de 480px) --- */
+@media screen and (max-width: 480px) {
+    header div a {
+        font-size: 1.5rem;
+    }
+
+    ul li a {
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
